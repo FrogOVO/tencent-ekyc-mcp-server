@@ -1,0 +1,32 @@
+{
+  "name": "tencent-ekyc-mcp-prototype",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Tencent Cloud eKYC MCP Server — Vibe Coding prototype",
+  "type": "module",
+  "bin": {
+    "tencent-ekyc-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "inspect": "npx -y @modelcontextprotocol/inspector node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "vitest": "^2.0.2"
+  },
+  "license": "Apache-2.0"
+}
